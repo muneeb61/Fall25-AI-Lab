@@ -4,7 +4,7 @@ tasks = []
 def addTask():
     task = input("Enter a task: ")
     tasks.append(task)
-    print(f"Task '{task}'added to the lis")
+    print(f"Task '{task}'added to the list")
     
 
 def listTasks():
@@ -13,16 +13,16 @@ def listTasks():
     else:
         print("Current Tasks: ")
         for index, task in enumerate (tasks):
-            print(f"Task  #{index}. {task}")
+            print(f"Task {index}. {task}")
 
     
 def deleteTask():
     listTasks()
     try:
-        taskToDelete = int(input("Ente the task number to delete: "))
+        taskToDelete = int(input("Enter the task number to delete: "))
         if taskToDelete >=0 and taskToDelete < len(tasks):
             tasks.pop(taskToDelete)
-            print(f"Task number {taskToDelete} has been found")
+            print(f"Task number {taskToDelete} has been Deleted")
         else:    
             print(f"Task number {taskToDelete} was not found")
         
