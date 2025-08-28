@@ -8,11 +8,11 @@ def addTask():
     
 
 def listTasks():
-    if not tasks:
+    if len(tasks) == 0:
         print("There are no tasks currently.")
     else:
         print("Current Tasks: ")
-        for index, task in enumerate (tasks):
+        for index, task in enumerate (tasks, start= 1):
             print(f"Task {index}. {task}")
 
     
